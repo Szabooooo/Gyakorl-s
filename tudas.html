@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tudástár</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tudástár</h1>
+        <input type="text" id="searchInput" placeholder="Keresés...">
+    </header>
+    <main id="content">
+        <!-- Tartalom jelenik meg itt -->
+    </main>
+    <button id="openModalBtn">Tartalom hozzáadása</button>
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Tartalom hozzáadása</h2>
+            <form id="addContentForm">
+                <label for="title">Cím:</label><br>
+                <input type="text" id="title" name="title"><br>
+                <label for="body">Tartalom:</label><br>
+                <textarea id="body" name="body"></textarea><br>
+                <button type="submit">Hozzáadás</button>
+            </form>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
